@@ -130,6 +130,8 @@ module.exports = {
         // set to true to preserve working directory when creating splits or tabs
         preserveCWD: true,
         // for advanced config flags please refer to https://hyper.is/#cfg
+        cursorBlink: true
+
     },
     // a list of plugins to fetch and install from npm
     // format: [@org/]project[#version]
@@ -137,7 +139,13 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ['hyper-tokyo-night-storm'],
+    plugins: ['hyper-tokyo-night-storm','hyper-custom-controls',
+        'hyper-omni-theme',
+        'hyper-sweet',
+        'hyper-sierra',
+        'hyper-font-ligatures',
+        'hyper-active-tab'
+     ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
